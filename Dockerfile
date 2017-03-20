@@ -1,9 +1,9 @@
-FROM alpine:3.4
+FROM alpine:3.5
 
 ENV LANG=C.UTF-8
 
 RUN alpine_glibc_url=https://github.com/sgerrand/alpine-pkg-glibc/releases/download \
- && alpine_glibc_version=2.23-r3 \
+ && alpine_glibc_version=2.25-r0 \
  && alpine_glibc_base=glibc-$alpine_glibc_version.apk \
  && alpine_glibc_bin=glibc-bin-$alpine_glibc_version.apk \
  && alpine_glibc_i18n=glibc-i18n-$alpine_glibc_version.apk \
